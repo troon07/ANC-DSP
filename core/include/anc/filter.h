@@ -25,7 +25,10 @@ public:
 class DcBlocker {
     float previous_=0, state_=0, r_=0.995f;
 public:
-    void configure(float fs, float cutoff=10) { r_=std::exp(-6.28318530718f*cutoff/fs); reset(); }
+    void configure(float fs, float cutoff=10) {
+        if(!std::isfinite(fs)||!std::isfinite(cutoff)||fs<=0||cutoff<=0||cutoff>=fs/2) throw std::invalid_argument("DC blocker cutoff");
+        r_=std::exp(-6.28318530718f*cutoff/fs); reset();
+    }
     void reset() noexcept { previous_=state_=0; }
     float process(float x) noexcept { float y=x-previous_+r_*state_; previous_=x; state_=y; return y; }
 };
@@ -33,7 +36,7 @@ class Biquad {
     float b0_=1,b1_=0,b2_=0,a1_=0,a2_=0,z1_=0,z2_=0;
 public:
     void lowpass(float fs,float fc,float q=0.70710678f) {
-        if(!(fs>0 && fc>0 && fc<fs/2 && q>0)) throw std::invalid_argument("Biquad cutoff");
+        if(!std::isfinite(fs)||!std::isfinite(fc)||!std::isfinite(q)||!(fs>0 && fc>0 && fc<fs/2 && q>0)) throw std::invalid_argument("Biquad cutoff");
         float w=6.28318530718f*fc/fs,c=std::cos(w),a=std::sin(w)/(2*q),d=1+a;
         b0_=(1-c)/(2*d); b1_=2*b0_; b2_=b0_; a1_=-2*c/d; a2_=(1-a)/d; reset();
     }

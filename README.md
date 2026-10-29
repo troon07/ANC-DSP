@@ -2,6 +2,10 @@
 
 Universal ANC Lab: a DSP research project: C++17 adaptive controller, native Windows bench-fixture app, Android app, and reproducible base-MATLAB simulations. **Simulated attenuation is not measured headphone attenuation.** Universal acoustic cancellation through arbitrary wired/Bluetooth headphones is not physically achievable by a host app alone.
 
+## Full adaptive DSP implementation
+
+Run `scripts/run_full_dsp.ps1` for LMS, NLMS and RLS comparisons, conditioning, block APIs, acoustic FxNLMS guards and independent MATLAB verification. See [implementation and equations](docs/FULL_ADAPTIVE_DSP.md) and [executed full-DSP results](results/full_dsp/matlab/REPORT.md). Digital signal cleanup and physical acoustic anti-noise are explicitly separate.
+
 ## Live single-tone demo with your Crystl earbuds
 
 The new Windows desktop app and Android app attempt a physical single-tone cancellation test using the existing laptop/phone microphone. Turn built-in headset ANC OFF, use one device as a steady speaker source, and fix the LEFT earbud beside the other device's microphone. Read [the exact setup and measurement procedure](docs/LIVE_TONAL_DEMO.md). This is cancellation at a sensor point, not proven ambient/ear-canal ANC.

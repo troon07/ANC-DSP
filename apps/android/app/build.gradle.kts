@@ -5,7 +5,7 @@ plugins {
 android {
     namespace = "com.universalanc"
     compileSdk = 35
-    defaultConfig { applicationId = "com.universalanc"; minSdk = 26; targetSdk = 35; versionCode = 3; versionName = "2.1" }
+    defaultConfig { applicationId = "com.universalanc"; minSdk = 26; targetSdk = 35; versionCode = 4; versionName = "2.2" }
     compileOptions { sourceCompatibility = JavaVersion.VERSION_17; targetCompatibility = JavaVersion.VERSION_17 }
     kotlinOptions { jvmTarget = "17" }
 }

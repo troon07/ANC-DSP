@@ -7,12 +7,12 @@ class FxLms {
     FirFilter secondary_;
     std::array<float,MaxTaps> w_{},x_{},fx_{};
     size_t n_=64,pos_=0;
-    float mu_=0.03f, leak_=1e-6f;
+    float mu_=0.03f, leak_=1e-6f,epsilon_=1e-8f,maximumNorm_=20;
 public:
-    void configure(size_t n,const std::vector<float>& secondary,float mu=0.03f,float leak=1e-6f) {
-        if(!n || n>MaxTaps || !std::isfinite(mu) || mu<=0 || mu>0.1f || !std::isfinite(leak) || leak<0 || leak>=1)
+    void configure(size_t n,const std::vector<float>& secondary,float mu=0.03f,float leak=1e-6f,float epsilon=1e-8f,float maximumNorm=20) {
+        if(!n || n>MaxTaps || !std::isfinite(mu) || mu<=0 || mu>0.1f || !std::isfinite(leak) || leak<0 || leak>=1 || !std::isfinite(epsilon)||epsilon<=0||!std::isfinite(maximumNorm)||maximumNorm<=0)
             throw std::invalid_argument("FxNLMS config");
-        secondary_.configure(secondary); n_=n; mu_=mu; leak_=leak; reset();
+        secondary_.configure(secondary); n_=n; mu_=mu; leak_=leak;epsilon_=epsilon;maximumNorm_=maximumNorm; reset();
     }
     void reset() noexcept { w_.fill(0); x_.fill(0); fx_.fill(0); secondary_.reset(); pos_=0; }
     float output(float ref) noexcept {
@@ -22,13 +22,15 @@ public:
     }
     void adapt(float error,bool enabled=true) noexcept {
         if(enabled) {
-            float power=1e-8f; for(size_t k=0;k<n_;++k) power+=fx_[k]*fx_[k];
+            float power=epsilon_; for(size_t k=0;k<n_;++k) power+=fx_[k]*fx_[k];
             float g=mu_*error/power; size_t j=pos_;
             for(size_t k=0;k<n_;++k) { w_[k]=(1-leak_)*w_[k]-g*fx_[j]; j=j?j-1:n_-1; }
+            double norm=coefficientNorm();if(norm>maximumNorm_&&std::isfinite(norm)){float scale=float(maximumNorm_/norm);for(size_t k=0;k<n_;++k)w_[k]*=scale;}
         }
         pos_=(pos_+1)%n_;
     }
     std::vector<float> weights() const { return {w_.begin(),w_.begin()+n_}; }
+    double coefficientNorm()const noexcept{double power=0;for(size_t k=0;k<n_;++k)power+=double(w_[k])*w_[k];return std::sqrt(power);}
     bool finite() const noexcept { for(size_t k=0;k<n_;++k) if(!std::isfinite(w_[k])) return false; return true; }
 };
 }

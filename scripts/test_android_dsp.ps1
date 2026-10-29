@@ -11,7 +11,7 @@ foreach ($artifactPath in @('org.jetbrains.kotlin/kotlin-script-runtime','org.je
 if (-not $compiler -or -not $stdlib) { throw 'Run the Android Gradle build first to populate Kotlin compiler dependencies' }
 $outputDir = "$projectRoot/build_verified/kotlin_dsp_test"
 New-Item -ItemType Directory -Path $outputDir -Force | Out-Null
-& "$env:JAVA_HOME/bin/java.exe" -cp ($supportJars -join ';') org.jetbrains.kotlin.cli.jvm.K2JVMCompiler -no-stdlib -no-reflect -jvm-target 17 -classpath ($supportJars -join ';') -d $outputDir "$projectRoot/apps/android/app/src/main/java/com/universalanc/FxController.kt" "$projectRoot/apps/android/app/src/main/java/com/universalanc/TonalController.kt" "$projectRoot/apps/android/dsp_test/Main.kt"
+& "$env:JAVA_HOME/bin/java.exe" -cp ($supportJars -join ';') org.jetbrains.kotlin.cli.jvm.K2JVMCompiler -no-stdlib -no-reflect -jvm-target 17 -classpath ($supportJars -join ';') -d $outputDir "$projectRoot/apps/android/app/src/main/java/com/universalanc/FxController.kt" "$projectRoot/apps/android/app/src/main/java/com/universalanc/TonalController.kt" "$projectRoot/apps/android/app/src/main/java/com/universalanc/AdaptiveDsp.kt" "$projectRoot/apps/android/dsp_test/Main.kt"
 if ($LASTEXITCODE -ne 0) { throw 'Kotlin DSP test compilation failed' }
-& "$env:JAVA_HOME/bin/java.exe" -cp "$outputDir;$($stdlib.FullName)" MainKt
+& "$env:JAVA_HOME/bin/java.exe" "-Danc.traceDirectory=$projectRoot/results/full_dsp/cpp" -cp "$outputDir;$($stdlib.FullName)" MainKt
 if ($LASTEXITCODE -ne 0) { throw 'Kotlin DSP assertions failed' }

@@ -1,12 +1,12 @@
 [
   {
     "name": "UniversalANC-Lab.apk",
-    "bytes": 844448,
-    "sha256": "dd37301d63afefd75b2aba283e24c72c18e38be2db6999b9a9169bbf3435b565"
+    "bytes": 900887,
+    "sha256": "b2d07ebf7d96ae193a010fa519ed100cb99dd959471df01e6adfd7e57d085722"
   },
   {
     "name": "UniversalANC-Windows.zip",
-    "bytes": 3526534,
-    "sha256": "eb0eeba5ba8c693674890f353f536863d8f69d96705e7c98c6615122917f8b94"
+    "bytes": 4836319,
+    "sha256": "715bd78750db28a32416f7e24b9cdf85905c34fc4acd3ac4915057f4b42cbf0c"
   }
 ]

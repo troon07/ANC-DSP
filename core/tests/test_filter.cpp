@@ -5,4 +5,7 @@ void test_filter() {
     anc::DcBlocker d; d.configure(8000); float y=1; for(int i=0;i<20000;++i)y=d.process(1); CHECK(std::abs(y)<1e-5);
     anc::Biquad b; b.lowpass(8000,700); for(int i=0;i<20000;++i)y=b.process(1); CHECK(std::abs(y-1)<1e-4);
     bool threw=false; try { f.configure({}); } catch(...) {threw=true;} CHECK(threw);
+    threw=false; try { d.configure(8000,-10); } catch(...) {threw=true;} CHECK(threw);
+    threw=false; try { b.lowpass(INFINITY,700); } catch(...) {threw=true;} CHECK(threw);
+    threw=false; try { b.lowpass(8000,700,INFINITY); } catch(...) {threw=true;} CHECK(threw);
 }

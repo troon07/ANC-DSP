@@ -3,7 +3,7 @@
 #include <algorithm>
 #include <cstddef>
 namespace anc {
-enum class TripReason { None,NonFiniteSample,ExcessiveClipping,RouteChanged };
+enum class TripReason { None,NonFiniteSample,ExcessiveClipping,RouteChanged,SustainedOutputLimit,ErrorGrowth,InvalidFrame };
 class StabilityMonitor {
     bool enabled_=false,tripped_=false;
     TripReason reason_=TripReason::None;
