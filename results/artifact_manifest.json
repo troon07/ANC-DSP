@@ -1,0 +1,272 @@
+[
+  {
+    "path": "results/cpp/broadband.csv",
+    "bytes": 3194079,
+    "sha256": "400c59a247e44ebfd78af89da7074aa5653ebe5480238de4522fc79eb76f139e"
+  },
+  {
+    "path": "results/cpp/fan.csv",
+    "bytes": 3233982,
+    "sha256": "5f73363f40558d4f72b0bba934969883c11a365b35711960570d0bb29dcb092f"
+  },
+  {
+    "path": "results/cpp/hum_drone.csv",
+    "bytes": 3206273,
+    "sha256": "72e11097a48f4292649b31f442a70314cfdf83711de346c211608acf28de3928"
+  },
+  {
+    "path": "results/cpp/mismatch.csv",
+    "bytes": 3197499,
+    "sha256": "d2490c4d034b5aafd9328bf3937ffe5fcc4a167a603f257fe204032297e97e5e"
+  },
+  {
+    "path": "results/cpp/path_change.csv",
+    "bytes": 3183850,
+    "sha256": "87c49d6b0a2ec5dbcc38969c15da6fc4d5e8988e79c8b7e8f5719f6b39629c33"
+  },
+  {
+    "path": "results/cpp/summary.csv",
+    "bytes": 508,
+    "sha256": "6292b5dcf658fdf8a921d4addd9fedb01de0475ee6a42a28e55cf31f724d2020"
+  },
+  {
+    "path": "results/cpp/uncorrelated.csv",
+    "bytes": 3127033,
+    "sha256": "6cdabeb2c97dfb2c06035a5574a224ae6cf2edabc763da1675e086553fc72e90"
+  },
+  {
+    "path": "results/cpp/wired_delay.csv",
+    "bytes": 3170018,
+    "sha256": "7d2475d965d4cd3351c2e590766bbe91ec2c9e3441d10c5620c0ff06ee64de50"
+  },
+  {
+    "path": "results/cpp/wireless_delay.csv",
+    "bytes": 3164473,
+    "sha256": "3e1ca09a248281f88060a0a52fc92e43226a09a4fba44752adbd75e2aa9e89a6"
+  },
+  {
+    "path": "results/matlab/01_FIR_Filter.fig",
+    "bytes": 140693,
+    "sha256": "3e2450863fe879cd704c29bac88b6fc49c42354c5c1a4aef8fa880c4ba10d144"
+  },
+  {
+    "path": "results/matlab/01_FIR_Filter.png",
+    "bytes": 56925,
+    "sha256": "21e1e6354c4ce25cf2de5ce810827ca5e045706d54abd02b0b52d4b5a86885ec"
+  },
+  {
+    "path": "results/matlab/02_DC_Blocker_and_Biquad.fig",
+    "bytes": 102717,
+    "sha256": "5fc2b1071aad77e6aad4ef582b12e18e9463ad3130f054ea568e0ce3bb2ccecf"
+  },
+  {
+    "path": "results/matlab/02_DC_Blocker_and_Biquad.png",
+    "bytes": 33988,
+    "sha256": "bbfa625b75bca16a7f78ddfe68de2670fde784e5ee27739bf6aa2d6bd216ab1f"
+  },
+  {
+    "path": "results/matlab/03_SubBands.fig",
+    "bytes": 10415,
+    "sha256": "97f94d6cf5b0467f7600e001dc78695c96ceed1ecccbdcbf99f6c68649bb44cf"
+  },
+  {
+    "path": "results/matlab/03_SubBands.png",
+    "bytes": 27949,
+    "sha256": "ec32b353cf2ade5f718242a1736662b669cf59d77a386952dc4c4b9f234da5d6"
+  },
+  {
+    "path": "results/matlab/04_NLMS_and_SecondaryPath.fig",
+    "bytes": 409743,
+    "sha256": "67c938222df1992b876fe6a201f0324290759dbde4e0270b774d21923304ac2f"
+  },
+  {
+    "path": "results/matlab/04_NLMS_and_SecondaryPath.png",
+    "bytes": 42314,
+    "sha256": "2514cb89d3412e953ece65c16c12c791c92cc7ce10c5fe6369c05962e2d9ed8c"
+  },
+  {
+    "path": "results/matlab/05_SecondaryPath_Phase.fig",
+    "bytes": 204320,
+    "sha256": "7d25b659bde26b2ed9602559dcf2940965db9993feddde013bd15aced2859880"
+  },
+  {
+    "path": "results/matlab/05_SecondaryPath_Phase.png",
+    "bytes": 39153,
+    "sha256": "290b50d2af4c3fc45dcf10b3aaa1b96a26e6b76aa924fbb911e3d7cb6b3aadde"
+  },
+  {
+    "path": "results/matlab/06_FxLMS_Convergence.fig",
+    "bytes": 1561542,
+    "sha256": "b0877043dbde881de31482cb8cfdfccf2e9c90d214b1bcacc4219e69aa14c747"
+  },
+  {
+    "path": "results/matlab/06_FxLMS_Convergence.png",
+    "bytes": 55747,
+    "sha256": "c4bb5bd9febb4c7d92e824cbcde4744cc8ec9f3ec499633f32b456e96580ffe5"
+  },
+  {
+    "path": "results/matlab/07_Spectral_Comparison.fig",
+    "bytes": 16488,
+    "sha256": "0cc73857de2a96732108ec66e1c0096df41d2dbf591294fc1a98ff12535e530f"
+  },
+  {
+    "path": "results/matlab/07_Spectral_Comparison.png",
+    "bytes": 50836,
+    "sha256": "d61dcc987e7751537f621aa577e647c5c24d325b3651a2f9724353cb387a1b72"
+  },
+  {
+    "path": "results/matlab/08_Scenarios_and_Latency.fig",
+    "bytes": 10183,
+    "sha256": "bd1327f26cee7775cedcc19953f21af8a7b8835b3961ecc1e218029e5727b41a"
+  },
+  {
+    "path": "results/matlab/08_Scenarios_and_Latency.png",
+    "bytes": 41111,
+    "sha256": "7ea79e2ea2353408ee25401172b2fdcb99e9d2f1b7e84648341f3e3a490749ad"
+  },
+  {
+    "path": "results/matlab/09_Stability_Monitor.fig",
+    "bytes": 597624,
+    "sha256": "e2dfdf56a45d266b521542854ef70f4322ebbe2cef4a842fe1ec363faee9abe2"
+  },
+  {
+    "path": "results/matlab/09_Stability_Monitor.png",
+    "bytes": 66200,
+    "sha256": "a7186d342fbad9bd9380e44386d5564c1f6d66bfd2a661f1487a8253bee81cda"
+  },
+  {
+    "path": "results/matlab/10_Quantization.fig",
+    "bytes": 74121,
+    "sha256": "c5d56653aeca33f841d7ecdb2134dbcf5540ea65358b77e748f3a24701b96dd0"
+  },
+  {
+    "path": "results/matlab/10_Quantization.png",
+    "bytes": 51945,
+    "sha256": "490520810df86a0fc430a7c1026a3c33ea98eb582aad035567f06f1f70705dc5"
+  },
+  {
+    "path": "results/matlab/11_Sampling_and_Aliasing.fig",
+    "bytes": 19966,
+    "sha256": "3a2be60b9944456f7f5c1f0328e174355bab2e80a3afb0b727136ecfa5ac38b9"
+  },
+  {
+    "path": "results/matlab/11_Sampling_and_Aliasing.png",
+    "bytes": 21530,
+    "sha256": "2372208d86d6b29dee7b38c6cb3fec56f9e8d4e9f59156f6df9a348232c58e21"
+  },
+  {
+    "path": "results/matlab/12_Multirate_AntiAlias.fig",
+    "bytes": 93050,
+    "sha256": "ad41c88572c0016001f40f82fac8a325a971227e01d5d667ab63570bf951f956"
+  },
+  {
+    "path": "results/matlab/12_Multirate_AntiAlias.png",
+    "bytes": 65136,
+    "sha256": "369151b86e840b2480a4303488c933bff1124606ce01840d02e44652dd3c3a69"
+  },
+  {
+    "path": "results/matlab/13_Phase_and_Latency.fig",
+    "bytes": 67957,
+    "sha256": "fbdbeb889cbf7e4b1f2c91869053f571bb21241c7764d49b7dc0a8494693068b"
+  },
+  {
+    "path": "results/matlab/13_Phase_and_Latency.png",
+    "bytes": 65644,
+    "sha256": "ae854c7959c626203c42bbe52e40a324ad1b07939b0536515fd00cfce8b0dd33"
+  },
+  {
+    "path": "results/matlab/bands.csv",
+    "bytes": 135,
+    "sha256": "c9cff6bd01a58a647e31cc1020dbcead4aeb9e396e44a618a6825b4144e28073"
+  },
+  {
+    "path": "results/matlab/baseline.wav",
+    "bytes": 96044,
+    "sha256": "b81967ba85fdf1193bad28939670846d6de2d03a0ce5c58af340d9a92ac01017"
+  },
+  {
+    "path": "results/matlab/broadband.csv",
+    "bytes": 4153722,
+    "sha256": "b867ae2e0a3403678f37c64f25b8dfaa15d6c60ff0067b227099f0c8c0f4c829"
+  },
+  {
+    "path": "results/matlab/calibration_recording.csv",
+    "bytes": 1892218,
+    "sha256": "0ddaa04b02907bdc7974d152568a5424a282ee95e2959aba2748fe7095f44e0c"
+  },
+  {
+    "path": "results/matlab/calibration_summary.csv",
+    "bytes": 39,
+    "sha256": "d75793ad656d552083a84dc3d78fc9c5bd79e4ce9173f5bbcfa70fb4900a1dbc"
+  },
+  {
+    "path": "results/matlab/cpp_agreement.csv",
+    "bytes": 56,
+    "sha256": "2e306cfa4d58f4735386e075f4eada4abe2729389eadae7eb12916b1e5fd3b17"
+  },
+  {
+    "path": "results/matlab/cpp_calibration.csv",
+    "bytes": 51,
+    "sha256": "c14213bb8a630b9181b9ec4d23291f08e164118a5c4aa405395a7b9a5695a9bd"
+  },
+  {
+    "path": "results/matlab/experiments.mat",
+    "bytes": 13420940,
+    "sha256": "9d8e7cb4d0dd850ef31ce2bd3c2432dd0e8ca0b93c79bc6a44860e740ae7e1bd"
+  },
+  {
+    "path": "results/matlab/fan.csv",
+    "bytes": 4193578,
+    "sha256": "75dd84f0d1ee08b565c7ded4b4c64873060ab068686e15fdf19c8612ee01b9f7"
+  },
+  {
+    "path": "results/matlab/fundamentals_summary.csv",
+    "bytes": 69,
+    "sha256": "49572d14f3e2fb54d06d697aaa3b1be9155e9609e46afeb7ecf151de927ecb0f"
+  },
+  {
+    "path": "results/matlab/hum_drone.csv",
+    "bytes": 4165934,
+    "sha256": "e945dac3c039795ad44c5f1a1d5974829a7dbb9765263c3b582d300dfa8e1bb2"
+  },
+  {
+    "path": "results/matlab/identified.profile",
+    "bytes": 583,
+    "sha256": "474b2d40591dc3238c6082990d2ba8c7937da1092f4072be49e6e6cda7925629"
+  },
+  {
+    "path": "results/matlab/mismatch.csv",
+    "bytes": 4157230,
+    "sha256": "7da2a90bbb3b4d90916f81b6f13c2f0e9d4279070c7864982aec001092c1eb96"
+  },
+  {
+    "path": "results/matlab/path_change.csv",
+    "bytes": 4143721,
+    "sha256": "e26547b446b45d4c209bdaa53fafc2b576d47dd35d070f6d04823b3aaefb7855"
+  },
+  {
+    "path": "results/matlab/residual.wav",
+    "bytes": 96044,
+    "sha256": "5c8cd6b924d9ad3827c12deba1445468fb7889abca06301e9d700c7f62b21193"
+  },
+  {
+    "path": "results/matlab/summary.csv",
+    "bytes": 616,
+    "sha256": "84b291d5076322c71696d324534072deecfb31c900839dbce6000e0971f2e686"
+  },
+  {
+    "path": "results/matlab/uncorrelated.csv",
+    "bytes": 4086701,
+    "sha256": "893537c80fa6014f07cc3b538449e3ef9d392be5e655112825b2867d81ee3607"
+  },
+  {
+    "path": "results/matlab/wired_delay.csv",
+    "bytes": 4129634,
+    "sha256": "05b60b852bc8db8088e279bf8759d338b7d921c2a59968d02fdb112e6d0b80b1"
+  },
+  {
+    "path": "results/matlab/wireless_delay.csv",
+    "bytes": 4122162,
+    "sha256": "cc8254969a8e8298749b7078b83d295ab7ffc0b59bb31ab6ee9f132612869828"
+  }
+]

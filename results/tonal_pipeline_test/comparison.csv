@@ -1,0 +1,2 @@
+observed_tone_change_db,model_tone_change_db,observed_total_change_db,model_total_change_db,off_source_drift_db,calibration_fit_error,measurement_checks_pass,synthetic_test,target_below_estimated_floor
+68.3903834336424,37.8639908489817,29.5870428388735,28.9730519270159,2.55546778636622e-14,2.43479849771084e-06,1,1,1

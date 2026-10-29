@@ -1,0 +1,1 @@
+Deterministic test signals are generated in core/include/anc/simulation.h. Actual results are in ../results/. Historical example calibration and empty diagnostics were archived under ../recovery/recovered_examples/; they are not acoustic measurements.
